@@ -1,0 +1,6 @@
+@SysInfo_HostAddress = http://localhost:5131
+
+GET {{SysInfo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
