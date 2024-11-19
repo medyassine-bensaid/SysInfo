@@ -54,21 +54,8 @@ namespace SysInfo.Repositories
             }
         }
 
-        // Get all teams with their leaders
-        public async Task<IEnumerable<Team>> GetAllTeamsWithLeadersAsync()
-        {
-            return await _context.Teams
-                .Include(t => t.TeamLeader) // Include the TeamLeader navigation property
-                .ToListAsync();
-        }
-
-        // Find a specific team with its leader by ID
-        public async Task<Team> GetTeamWithLeaderByIdAsync(int teamId)
-        {
-            return await _context.Teams
-                .Include(t => t.TeamLeader) // Include the TeamLeader navigation property
-                .FirstOrDefaultAsync(t => t.Id == teamId);
-        }
+  
+       
     }
 
 }

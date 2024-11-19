@@ -55,25 +55,7 @@ namespace SysInfo.Controllers
             return NoContent();
         }
 
-        // GET: api/Teams
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Team>>> GetAllTeamsWithLeaders()
-        {
-            var teams = await _repository.GetAllTeamsWithLeadersAsync();
-            return Ok(teams);
-        }
 
-        // GET: api/Teams/{id}
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Team>> GetTeamWithLeaderById(int id)
-        {
-            var team = await _repository.GetTeamWithLeaderByIdAsync(id);
-            if (team == null)
-            {
-                return NotFound();
-            }
-            return Ok(team);
-        }
     }
 
 }

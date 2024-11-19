@@ -13,8 +13,6 @@ namespace SysInfo.Repositories
         Task AddTeamAsync(Team team);
         Task UpdateTeamAsync(Team team);
         Task DeleteTeamAsync(int id);
-        Task<IEnumerable<Team>> GetAllTeamsWithLeadersAsync();
-        Task<Team> GetTeamWithLeaderByIdAsync(int teamId);
     }
 
 }

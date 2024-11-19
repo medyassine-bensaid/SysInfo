@@ -17,6 +17,8 @@ namespace SysInfo.Models
         public int Members { get; set; }
 
         [Required(ErrorMessage = "Team leader is required")]
+
+        public int TeamLeaderId { get; set; }
         public User TeamLeader { get; set; } // Navigation property for the leader
 
         public ICollection<User> TeamMembers { get; set; } // Navigation for team members

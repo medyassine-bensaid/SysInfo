@@ -17,22 +17,34 @@ namespace SysInfo.Infrastructure.Data
         public DbSet<Administrator> Administrators { get; set; }
 
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            base.OnModelCreating(modelBuilder);
+
             // Team relationships
             modelBuilder.Entity<Team>()
-         .HasOne(t => t.TeamLeader) // Navigation property for the leader
-         .WithMany(u => u.LedTeams) // Reverse navigation for LedTeams
-         .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
+                .HasOne(t => t.TeamLeader) // Team leader navigation
+                .WithMany(u => u.LedTeams)
+                .HasForeignKey(t => t.TeamLeaderId) // Add foreign key
+                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
+
             modelBuilder.Entity<Team>()
                 .HasMany(t => t.TeamMembers)
-                .WithMany(u => u.Teams);
+                .WithMany(u => u.Teams)
+                .UsingEntity<Dictionary<string, object>>(
+                    "TeamUser", // Define join table name
+                    j => j.HasOne<User>().WithMany().HasForeignKey("UserId"),
+                    j => j.HasOne<Team>().WithMany().HasForeignKey("TeamId")
+                );
 
             // Project relationships
             modelBuilder.Entity<Project>()
                 .HasOne(p => p.Team)
                 .WithMany()
-                .HasForeignKey(p => p.TeamId);
+                .HasForeignKey(p => p.TeamId)
+                .OnDelete(DeleteBehavior.Cascade); // Add delete behavior if needed
 
             modelBuilder.Entity<Project>()
                 .HasOne(p => p.Client)
@@ -49,6 +61,7 @@ namespace SysInfo.Infrastructure.Data
                 .HasOne(f => f.Project)
                 .WithMany()
                 .HasForeignKey(f => f.ProjectId);
+
         }
 
     }
