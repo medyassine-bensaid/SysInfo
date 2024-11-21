@@ -1,4 +1,6 @@
-﻿namespace SysInfo.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SysInfo.Models
 {
 
     public enum SatisfactionLevel
@@ -9,6 +11,7 @@
     }
     public class Feedback
     {
+        [Key]
         public int Id { get; set; }
         public int ResponseTime { get; set; }
         public int SystemPerformanceMetrics { get; set; }

@@ -23,13 +23,35 @@ namespace SysInfo.Infrastructure.Data
 
             base.OnModelCreating(modelBuilder);
 
-            // Team relationships
-            modelBuilder.Entity<Team>()
-                .HasOne(t => t.TeamLeader) // Team leader navigation
-                .WithMany(u => u.LedTeams)
-                .HasForeignKey(t => t.TeamLeaderId) // Add foreign key
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
+            //// Team relationships
+            //modelBuilder.Entity<Team>()
+            //    .HasOne(t => t.TeamLeader) // Team leader navigation
+            //    .WithMany(u => u.LedTeams)
+            //    .HasForeignKey(t => t.TeamLeaderId) // Add foreign key
+            //    .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
 
+       //     modelBuilder.Entity<Team>()
+       //.HasOne(t => t.TeamLeader) // Navigation property for the leader
+       //.WithMany(u => u.LedTeams) // Reverse navigation for LedTeams
+       //.OnDelete(DeleteBehavior.Restrict); // Prevent cascade del
+
+            // Configure the Team entity
+            modelBuilder.Entity<Team>(entity =>
+            {
+                entity.HasKey(t => t.Id); // Primary Key
+
+                entity.Property(t => t.Name)
+                      .IsRequired()
+                      .HasMaxLength(100);
+
+                entity.Property(t => t.Members)
+                      .IsRequired();
+
+                entity.HasOne(t => t.TeamLeader) // Relationship with User
+                      .WithMany(u => u.LedTeams) // Reverse navigation
+                      .HasForeignKey(t => t.TeamLeaderId) // Foreign Key
+                      .OnDelete(DeleteBehavior.Restrict); // Restrict delete
+            });
             modelBuilder.Entity<Team>()
                 .HasMany(t => t.TeamMembers)
                 .WithMany(u => u.Teams)
