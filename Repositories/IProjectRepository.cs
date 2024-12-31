@@ -14,7 +14,7 @@ namespace SysInfo.Repositories
         Task UpdateProjectAsync(Project project);
         Task DeleteProjectAsync(int id);
         Task<IEnumerable<Project>> GetProjectsByTeamIdAsync(int teamId);
-        Task<IEnumerable<Project>> GetProjectsByClientIdAsync(int clientId);
+       // Task<IEnumerable<Project>> GetProjectsByClientIdAsync(int clientId);
     }
 
 }

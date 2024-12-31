@@ -56,15 +56,17 @@ namespace SysInfo.Repositories
 
         public async Task<IEnumerable<Project>> GetProjectsByTeamIdAsync(int teamId)
         {
-            // Retrieve projects by team ID
-            return await _context.Projects.Where(p => p.TeamId == teamId).ToListAsync();
+            return await _context.Projects
+    .Where(p => p.Teams.Any(t => t.Id == teamId)) // Check if any team matches the ID
+    .ToListAsync();
+
         }
 
-        public async Task<IEnumerable<Project>> GetProjectsByClientIdAsync(int clientId)
-        {
-            // Retrieve projects by client ID
-            return await _context.Projects.Where(p => p.ClientId == clientId).ToListAsync();
-        }
+        //public async Task<IEnumerable<Project>> GetProjectsByClientIdAsync(int clientId)
+        //{
+        //    // Retrieve projects by client ID
+        //    return await _context.Projects.Where(p => p.ClientId == clientId).ToListAsync();
+        //}
     }
 
 }

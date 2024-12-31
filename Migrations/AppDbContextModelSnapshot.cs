@@ -22,6 +22,36 @@ namespace SysInfo.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
+            modelBuilder.Entity("ClientProject", b =>
+                {
+                    b.Property<int>("ClientsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProjectsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ClientsId", "ProjectsId");
+
+                    b.HasIndex("ProjectsId");
+
+                    b.ToTable("ProjectClients", (string)null);
+                });
+
+            modelBuilder.Entity("ProjectTeam", b =>
+                {
+                    b.Property<int>("ProjectsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TeamsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProjectsId", "TeamsId");
+
+                    b.HasIndex("TeamsId");
+
+                    b.ToTable("ProjectTeams", (string)null);
+                });
+
             modelBuilder.Entity("SysInfo.Models.Administrator", b =>
                 {
                     b.Property<int>("Id")
@@ -31,10 +61,6 @@ namespace SysInfo.Migrations
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -77,51 +103,13 @@ namespace SysInfo.Migrations
                     b.ToTable("Clients");
                 });
 
-            modelBuilder.Entity("SysInfo.Models.Feedback", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ClientId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CustomerSupportQuality")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProjectId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ResponseTime")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SatisfactionLevel")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SystemPerformanceMetrics")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ClientId");
-
-                    b.HasIndex("ProjectId");
-
-                    b.ToTable("Feedbacks");
-                });
-
             modelBuilder.Entity("SysInfo.Models.Project", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int?>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ClientId")
-                        .HasColumnType("int");
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int?>("Id"));
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime(6)");
@@ -134,14 +122,7 @@ namespace SysInfo.Migrations
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int>("TeamId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("ClientId");
-
-                    b.HasIndex("TeamId");
 
                     b.ToTable("Projects");
                 });
@@ -162,7 +143,7 @@ namespace SysInfo.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
-                    b.Property<int>("TeamLeaderId")
+                    b.Property<int?>("TeamLeaderId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -214,55 +195,47 @@ namespace SysInfo.Migrations
 
             modelBuilder.Entity("TeamUser", b =>
                 {
-                    b.Property<int>("TeamId")
+                    b.Property<int>("TeamMembersId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
+                    b.Property<int>("TeamsId")
                         .HasColumnType("int");
 
-                    b.HasKey("TeamId", "UserId");
+                    b.HasKey("TeamMembersId", "TeamsId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("TeamsId");
 
-                    b.ToTable("TeamUser");
+                    b.ToTable("TeamMembers", (string)null);
                 });
 
-            modelBuilder.Entity("SysInfo.Models.Feedback", b =>
+            modelBuilder.Entity("ClientProject", b =>
                 {
-                    b.HasOne("SysInfo.Models.Client", "Client")
-                        .WithMany("Feedbacks")
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("SysInfo.Models.Project", "Project")
+                    b.HasOne("SysInfo.Models.Client", null)
                         .WithMany()
-                        .HasForeignKey("ProjectId")
+                        .HasForeignKey("ClientsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Client");
-
-                    b.Navigation("Project");
+                    b.HasOne("SysInfo.Models.Project", null)
+                        .WithMany()
+                        .HasForeignKey("ProjectsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
-            modelBuilder.Entity("SysInfo.Models.Project", b =>
+            modelBuilder.Entity("ProjectTeam", b =>
                 {
-                    b.HasOne("SysInfo.Models.Client", "Client")
-                        .WithMany("Projects")
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("SysInfo.Models.Team", "Team")
+                    b.HasOne("SysInfo.Models.Project", null)
                         .WithMany()
-                        .HasForeignKey("TeamId")
+                        .HasForeignKey("ProjectsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Client");
-
-                    b.Navigation("Team");
+                    b.HasOne("SysInfo.Models.Team", null)
+                        .WithMany()
+                        .HasForeignKey("TeamsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("SysInfo.Models.Team", b =>
@@ -270,32 +243,24 @@ namespace SysInfo.Migrations
                     b.HasOne("SysInfo.Models.User", "TeamLeader")
                         .WithMany("LedTeams")
                         .HasForeignKey("TeamLeaderId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("TeamLeader");
                 });
 
             modelBuilder.Entity("TeamUser", b =>
                 {
-                    b.HasOne("SysInfo.Models.Team", null)
-                        .WithMany()
-                        .HasForeignKey("TeamId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("SysInfo.Models.User", null)
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("TeamMembersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
 
-            modelBuilder.Entity("SysInfo.Models.Client", b =>
-                {
-                    b.Navigation("Feedbacks");
-
-                    b.Navigation("Projects");
+                    b.HasOne("SysInfo.Models.Team", null)
+                        .WithMany()
+                        .HasForeignKey("TeamsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("SysInfo.Models.User", b =>

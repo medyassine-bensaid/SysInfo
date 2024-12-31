@@ -5,17 +5,13 @@ namespace SysInfo.Models
     public class Administrator
     {
         [Key]
-        public int Id { get; set; }
+        public int Id { get; set; } // Use { get; set; } to define a property
 
-        [Required]
-        public string Name { get; set; }
-
-        [Required]
         [EmailAddress]
-        public string Email { get; set; }
+        [Required]
+        public string? Email { get; set; } // Optional email validation
 
         [Required]
-        public string Password { get; set; }
+        public string? Password { get; set; }
     }
-
 }

@@ -96,16 +96,16 @@
         }
 
         // GET: api/Projects/client/{clientId}
-        [HttpGet("client/{clientId}")]
-        public async Task<ActionResult<IEnumerable<Project>>> GetProjectsByClientId(int clientId)
-        {
-            var projects = await _projectRepository.GetProjectsByClientIdAsync(clientId);
-            if (projects == null || !projects.Any())
-            {
-                return NotFound($"No projects found for Client ID {clientId}.");
-            }
-            return Ok(projects);
-        }
+        //[HttpGet("client/{clientId}")]
+        //public async Task<ActionResult<IEnumerable<Project>>> GetProjectsByClientId(int clientId)
+        //{
+        //    var projects = await _projectRepository.GetProjectsByClientIdAsync(clientId);
+        //    if (projects == null || !projects.Any())
+        //    {
+        //        return NotFound($"No projects found for Client ID {clientId}.");
+        //    }
+        //    return Ok(projects);
+        //}
     }
 
 }
