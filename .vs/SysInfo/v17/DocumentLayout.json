@@ -1,0 +1,605 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\migrations\\20241229133341_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\migrations\\20241229133341_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\iprojectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\iprojectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\models\\authenticatedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\models\\authenticatedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\models\\administrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\models\\administrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\sysinfo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\sysinfo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\sysinfo.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\sysinfo.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\controllers\\administratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\controllers\\administratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\iadministratorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\iadministratorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\repositories\\administratorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\repositories\\administratorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|c:\\users\\med yassine\\documents\\study\\tekup\\sysinfo\\sysinfo\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5768CF0-36BE-4409-82ED-4A4AD2AAA977}|SysInfo\\SysInfo.csproj|solutionrelative:sysinfo\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 36,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20241229133341_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Migrations\\20241229133341_InitialCreate.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Migrations\\20241229133341_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Migrations\\20241229133341_InitialCreate.cs",
+              "RelativeToolTip": "SysInfo\\Migrations\\20241229133341_InitialCreate.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T13:33:53.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "SysInfo\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\WeatherForecast.cs",
+              "RelativeToolTip": "SysInfo\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:55:11.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthenticatedResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\AuthenticatedResponse.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Models\\AuthenticatedResponse.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\AuthenticatedResponse.cs",
+              "RelativeToolTip": "SysInfo\\Models\\AuthenticatedResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:36:25.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SysInfo\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:28:38.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAFsSAAAAAAAAAAAawPgSAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-11-21T07:06:27.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SysInfo.csproj",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\SysInfo.csproj",
+              "RelativeDocumentMoniker": "SysInfo\\SysInfo.csproj",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\SysInfo.csproj",
+              "RelativeToolTip": "SysInfo\\SysInfo.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-20T13:40:45.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AdministratorController.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\AdministratorController.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Controllers\\AdministratorController.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\AdministratorController.cs",
+              "RelativeToolTip": "SysInfo\\Controllers\\AdministratorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T09:44:08.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AdministratorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\AdministratorRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\AdministratorRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\AdministratorRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\AdministratorRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T09:41:33.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IAdministratorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\IAdministratorRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\IAdministratorRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\IAdministratorRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\IAdministratorRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T09:40:52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Administrator.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\Administrator.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Models\\Administrator.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\Administrator.cs",
+              "RelativeToolTip": "SysInfo\\Models\\Administrator.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T09:39:06.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "SysInfo\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T09:37:02.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Controllers\\FeedbackController.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "SysInfo\\Controllers\\FeedbackController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T09:36:33.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FeedbackRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\FeedbackRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\FeedbackRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\FeedbackRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\FeedbackRepository.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAqwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:59:45.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IFeedbackRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\IFeedbackRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\IFeedbackRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\IFeedbackRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\IFeedbackRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:59:20.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Models\\Feedback.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\Feedback.cs",
+              "RelativeToolTip": "SysInfo\\Models\\Feedback.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:56:36.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProjectsController.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\ProjectsController.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Controllers\\ProjectsController.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\ProjectsController.cs",
+              "RelativeToolTip": "SysInfo\\Controllers\\ProjectsController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAqwGoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:34:55.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeamsController.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\TeamsController.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Controllers\\TeamsController.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\TeamsController.cs",
+              "RelativeToolTip": "SysInfo\\Controllers\\TeamsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:32:09.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProjectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\ProjectRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\ProjectRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\ProjectRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\ProjectRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvw8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:28:16.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TeamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\TeamRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\TeamRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\TeamRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\TeamRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAywDkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:20:56.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IProjectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\IProjectRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\IProjectRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\IProjectRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\IProjectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:42:45.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ITeamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\ITeamRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\ITeamRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\ITeamRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\ITeamRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:41:58.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Models\\Project.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\Project.cs",
+              "RelativeToolTip": "SysInfo\\Models\\Project.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:39:51.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Models\\Team.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\Team.cs",
+              "RelativeToolTip": "SysInfo\\Models\\Team.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:38:15.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "SysInfo\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAE0AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T13:29:00.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\ClientRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\ClientRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\ClientRepository.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwDUAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T13:27:10.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\IClientRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\IClientRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\IClientRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\IClientRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T13:25:38.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\Client.cs",
+              "RelativeToolTip": "SysInfo\\Models\\Client.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T11:18:02.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SysInfo.http",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\SysInfo.http",
+              "RelativeDocumentMoniker": "SysInfo\\SysInfo.http",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\SysInfo.http",
+              "RelativeToolTip": "SysInfo\\SysInfo.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-10-25T07:32:09.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SysInfo\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T21:48:48.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA3wBUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T10:30:46.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "SysInfo\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T21:43:55.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\appsettings.json",
+              "RelativeDocumentMoniker": "SysInfo\\appsettings.json",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\appsettings.json",
+              "RelativeToolTip": "SysInfo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-24T21:42:11.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Program.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Program.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Program.cs",
+              "RelativeToolTip": "SysInfo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T21:37:17.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "SysInfo\\Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwF8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T21:35:14.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\User.cs",
+              "RelativeDocumentMoniker": "SysInfo\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Med Yassine\\Documents\\STUDY\\TEKUP\\SysInfo\\SysInfo\\Models\\User.cs",
+              "RelativeToolTip": "SysInfo\\Models\\User.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T21:32:35.989Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
