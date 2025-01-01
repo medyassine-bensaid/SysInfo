@@ -76,6 +76,7 @@ namespace SysInfo.Infrastructure.Data
                 .HasOne(t => t.TeamLeader)
                 .WithMany(e => e.LedTeams)
                 .HasForeignKey(t => t.TeamLeaderId)
+                .HasPrincipalKey(e => e.Id)
                 .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Team>()

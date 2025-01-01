@@ -18,10 +18,39 @@ namespace SysInfo.Repositories
         }
 
         public async Task<IEnumerable<Team>> GetAllTeamsAsync()
+{
+    return await _context.Teams
+        .Include(t => t.TeamLeader) // Include the TeamLeader
+        .Include(t => t.TeamMembers) // Include the TeamMembers
+        .Select(t => new Team
         {
-            // Simply retrieve all teams without including related entities
-            return await _context.Teams.ToListAsync();
-        }
+            Id = t.Id,
+            Name = t.Name,
+            Members = t.Members,
+            TeamLeaderId = t.TeamLeaderId,
+            TeamLeader = t.TeamLeader != null
+                ? new User
+                {
+                    Id = t.TeamLeader.Id,
+                    FirstName = t.TeamLeader.FirstName,
+                    LastName = t.TeamLeader.LastName
+                }
+                : null,
+            // Include TeamMembers but avoid deep navigation properties that may cause cycles
+            TeamMembers = t.TeamMembers != null
+                ? t.TeamMembers.Select(m => new User
+                {
+                    Id = m.Id,
+                    FirstName = m.FirstName,
+                    LastName = m.LastName
+                }).ToList()
+                : null,
+            Projects = t.Projects // Include Projects if necessary
+        })
+        .ToListAsync();
+}
+
+        
 
         public async Task<Team> GetTeamByIdAsync(int id)
         {
@@ -31,10 +60,31 @@ namespace SysInfo.Repositories
 
         public async Task AddTeamAsync(Team team)
         {
-            // Add a new team
-            await _context.Teams.AddAsync(team);
+            if (team.TeamLeaderId.HasValue)
+            {
+                var existingUser = new User { Id = team.TeamLeaderId.Value };
+                _context.Users.Attach(existingUser); // Attach the existing TeamLeader
+                team.TeamLeader = existingUser;     // Associate the TeamLeader
+            }
+
+            if (team.TeamMembers != null && team.TeamMembers.Any())
+            {
+                var existingTeamMembers = team.TeamMembers
+                    .Select(member => new User { Id = member.Id }) // Create User objects with only the Id
+                    .ToList();
+
+                foreach (var member in existingTeamMembers)
+                {
+                    _context.Users.Attach(member); // Attach each existing User
+                }
+
+                team.TeamMembers = existingTeamMembers; // Associate the TeamMembers with the team
+            }
+
+            _context.Teams.Add(team); // Add the team to the context
             await _context.SaveChangesAsync();
         }
+
 
         public async Task UpdateTeamAsync(Team team)
         {

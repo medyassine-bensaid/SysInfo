@@ -34,11 +34,30 @@ namespace SysInfo.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddTeam(Team team)
+        public async Task<IActionResult> AddTeam([FromBody] Team team)
         {
-            await _repository.AddTeamAsync(team);
-            return CreatedAtAction(nameof(GetTeamById), new { id = team.Id }, team);
-        }
+            Console.WriteLine(team.TeamLeader.FirstName);
+            Console.WriteLine(team.TeamLeaderId);
+            Console.WriteLine(team.TeamMembers==null);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var newTeam = new Team
+            {
+                Name = team.Name,
+                Members = team.Members,
+                TeamMembers = team.TeamMembers,
+                TeamLeaderId = team.TeamLeader.Id
+            };
+
+            await _repository.AddTeamAsync(newTeam);
+
+            return NoContent();
+            // return CreatedAtAction(nameof(GetTeamById), new { id = newTeam.Id }, newTeam);
+        }   
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateTeam(int id, Team team)

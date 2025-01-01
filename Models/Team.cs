@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SysInfo.Models
 {
@@ -16,10 +17,11 @@ namespace SysInfo.Models
         public int Members { get; set; }
 
 
-        public virtual int? TeamLeaderId { get; set; }
-        public virtual  User? TeamLeader { get; set; } // Navigation property for the leader
+        [ForeignKey("User")]
+        public int? TeamLeaderId { get; set; }
+        public virtual User? TeamLeader { get; set; } // Navigation property for the leader
 
-        public virtual ICollection<User>? TeamMembers { get; set; } = new List<User>(); // Navigation for team members
+        public virtual ICollection<User> TeamMembers { get; set; } = new List<User>(); // Navigation for team members
         public ICollection<Project> Projects { get; set; } = new List<Project>();
 
     }
