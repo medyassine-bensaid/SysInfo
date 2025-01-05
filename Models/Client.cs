@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace SysInfo.Models
 {
@@ -19,6 +20,8 @@ namespace SysInfo.Models
         public string ClientType { get; set; }
 
         // Relationships
+        [JsonIgnore]
+
         public ICollection<Project>? Projects { get; set; } = new List<Project>();// Navigation for associated projects
         //public ICollection<Feedback>? Feedbacks { get; set; } // Navigation for feedback
     }

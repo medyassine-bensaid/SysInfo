@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace SysInfo.Models
 {
@@ -22,6 +23,7 @@ namespace SysInfo.Models
         public virtual User? TeamLeader { get; set; } // Navigation property for the leader
 
         public virtual ICollection<User> TeamMembers { get; set; } = new List<User>(); // Navigation for team members
+        [JsonIgnore]
         public ICollection<Project> Projects { get; set; } = new List<Project>();
 
     }

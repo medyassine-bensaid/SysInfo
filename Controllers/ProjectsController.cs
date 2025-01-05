@@ -2,6 +2,7 @@
 {
     using global::SysInfo.Models;
     using global::SysInfo.Repositories;
+    using global::SysInfo.ViewModel;
     using Microsoft.AspNetCore.Mvc;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -39,7 +40,7 @@
 
         // POST: api/Projects
         [HttpPost]
-        public async Task<ActionResult> AddProject([FromBody] Project project)
+        public async Task<ActionResult> AddProject([FromBody] ProjectDto project)
         {
             if (!ModelState.IsValid)
             {
@@ -52,7 +53,7 @@
 
         // PUT: api/Projects/{id}
         [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateProject(int id, [FromBody] Project project)
+        public async Task<ActionResult> UpdateProject(int id, [FromBody] ProjectDto project)
         {
             if (id != project.Id)
             {
@@ -65,7 +66,7 @@
                 return NotFound($"Project with ID {id} not found.");
             }
 
-            await _projectRepository.UpdateProjectAsync(project);
+            await _projectRepository.UpdateProjectAsync(id,project);
             return NoContent();
         }
 
