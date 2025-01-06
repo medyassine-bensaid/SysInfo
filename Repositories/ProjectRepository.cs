@@ -64,8 +64,9 @@ namespace SysInfo.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateProjectAsync(int projectId, ProjectDto projectDto)
+        public async Task UpdateProjectAsync(int projectId, Project projectDto)
         {
+            // Load the project with its related entities
             var project = await _context.Projects
                 .Include(p => p.Teams)
                 .Include(p => p.Clients)
@@ -73,24 +74,69 @@ namespace SysInfo.Repositories
 
             if (project == null) return;
 
+            // Update basic properties
             project.Name = projectDto.Name;
             project.StartDate = projectDto.StartDate;
             project.EndDate = projectDto.EndDate;
 
             // Update Teams
-            project.Teams.Clear();
-            project.Teams = await _context.Teams
-                .Where(t => projectDto.TeamIds.Contains(t.Id))
-                .ToListAsync();
+            if (projectDto.Teams != null && projectDto.Teams.Any())
+            {
+                // Clear existing associations
+                project.Teams.Clear();
+
+                // Attach the existing Teams by fetching full team details
+                foreach (var team in projectDto.Teams)
+                {
+                    var existingTeam = await _context.Teams
+                        .FirstOrDefaultAsync(t => t.Id == team.Id); // Retrieve the full team
+
+                    if (existingTeam != null)
+                    {
+                        _context.Teams.Attach(existingTeam); // Attach the full team entity
+                        project.Teams.Add(existingTeam); // Associate the full team with the project
+                    }
+                }
+            }
+            else
+            {
+                // Remove all Teams if not provided
+                project.Teams.Clear();
+            }
 
             // Update Clients
-            project.Clients.Clear();
-            project.Clients = await _context.Clients
-                .Where(c => projectDto.ClientIds.Contains(c.Id))
-                .ToListAsync();
+            if (projectDto.Clients != null && projectDto.Clients.Any())
+            {
+                // Clear existing associations
+                project.Clients.Clear();
 
+                // Attach the existing Clients by fetching full client details
+                foreach (var client in projectDto.Clients)
+                {
+                    var existingClient = await _context.Clients
+                        .FirstOrDefaultAsync(c => c.Id == client.Id); // Retrieve the full client
+
+                    if (existingClient != null)
+                    {
+                        _context.Clients.Attach(existingClient); // Attach the full client entity
+                        project.Clients.Add(existingClient); // Associate the full client with the project
+                    }
+                }
+            }
+            else
+            {
+                // Remove all Clients if not provided
+                project.Clients.Clear();
+            }
+
+            // Mark project as modified
+            _context.Entry(project).State = EntityState.Modified;
+
+            // Save changes to the database
             await _context.SaveChangesAsync();
         }
+
+
 
         public async Task DeleteProjectAsync(int id)
         {

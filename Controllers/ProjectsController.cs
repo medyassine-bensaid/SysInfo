@@ -53,7 +53,7 @@
 
         // PUT: api/Projects/{id}
         [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateProject(int id, [FromBody] ProjectDto project)
+        public async Task<ActionResult> UpdateProject(int id, [FromBody] Project project)
         {
             if (id != project.Id)
             {

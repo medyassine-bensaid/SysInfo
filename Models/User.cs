@@ -25,8 +25,8 @@ namespace SysInfo.Models
 
 
         // Relationships
-        public virtual ICollection<Team>? Teams { get; set; } = new List<Team>(); // Teams the user is a member of
-        public virtual ICollection<Team>? LedTeams { get; set; } = new List<Team>(); // Teams the user leads
+        public virtual ICollection<Team>? Teams { get; set; } // Teams the user is a member of
+        public virtual ICollection<Team>? LedTeams { get; set; } // Teams the user leads
     }
 
 }
