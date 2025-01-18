@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SysInfo.Models;
 using SysInfo.Repositories;
 
@@ -20,6 +21,7 @@ namespace SysInfo.Controllers
         {
             return Ok(await _userRepository.GetAllUsers());
         }
+  
 
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
@@ -53,6 +55,22 @@ namespace SysInfo.Controllers
             await _userRepository.DeleteUser(id);
             return NoContent();
         }
+
+        [HttpGet("search")]
+        public async Task<IActionResult> Search(string firstName, string lastName)
+        {
+            var users = await _userRepository.GetAllUsers();
+
+            // Apply filtering locally after getting all users
+            var filteredUsers = users
+                .Where(u => u.FirstName.Contains(firstName) && u.LastName.Contains(lastName))
+                .ToList();
+
+            return Ok(filteredUsers);
+        }
     }
+
+
+
 
 }
